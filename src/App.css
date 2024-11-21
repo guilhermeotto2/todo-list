@@ -1,18 +1,59 @@
 body {
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #ffffff   !important;
+  color: #ffffff !important;
 }
 
 .app {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
-  background-color: #efefef;
-}
-
-p {
-  margin: 10px 0;
+  background-color: #161B22    ;
+  flex-wrap: wrap;
 }
 
 input {
   box-sizing: border-box;
+}
+
+.todo {
+  background-color:  #0F3460   ;
+}
+
+.complete {
+  background-color: #86fcbb ;
+}
+.complete:hover {
+  background-color: #30b86f ;
+}
+
+.remove {
+  background-color: #f85336;
+  color: #ffffff;
+}
+.remove:hover {
+  background-color: #cc381e;
+  color: #ffffff;
+}
+
+button {
+  border: none;
+  margin-right: 8px !important;
+  padding: 8px;
+}
+
+.todo {
+  width: auto;
+  justify-content: space-between;
+  
+}
+
+.outline-0{
+  outline: none;
+}
+
+.category {
+  font-size: 0.9em;
+}
+
+.criar {
+  color: #2e82ff;
 }
