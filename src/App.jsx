@@ -27,8 +27,8 @@ function App() {
   ])
 
   return (
-    <div className="app">
-      <h1>Lista de tarefas:</h1>
+    <div className="app rounded p-5 mt-5 mb-5">
+      <h1 className='text-center'>Lista de tarefas:</h1>
 
       <div className="todo-list">
 
