@@ -2,7 +2,7 @@ import React from 'react'
 
 const Todo = ({ todo, removeTodo, completeTodo }) => {
     return (
-        <div className="todo mb-5 mt-5 d-flex" 
+        <div className="todo rounded mb-5 mt-5 d-flex" 
         style={{
             textDecoration: todo.complete ? "line-through" : "",
             backgroundColor: todo.complete ? "#0c2749" : "#0F3460",
@@ -13,7 +13,10 @@ const Todo = ({ todo, removeTodo, completeTodo }) => {
             </div>
             
             <div className='d-flex justify-content-center align-items-center'>
-                <button className='complete rounded' onClick={() => completeTodo(todo.id)}>Completar</button>
+                <button className='complete rounded' onClick={() => completeTodo(todo.id)}>
+                    {todo.complete ? "Desmarcar" : "Completar"}
+                </button>
+                
                 <button className='remove rounded' onClick={() => removeTodo(todo.id)}>x</button>
             </div>
             

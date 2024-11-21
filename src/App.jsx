@@ -48,7 +48,7 @@ function App() {
   const completeTodo = (id) => {
     const newTodos = [...todos]
     newTodos.map(
-      (todo) => todo.id === id ? (todo.complete =  !todo.complete) : todo);
+      (todo) => todo.id === id ? (todo.complete = !todo.complete) : todo);
 
       setTodos(newTodos)
   }
